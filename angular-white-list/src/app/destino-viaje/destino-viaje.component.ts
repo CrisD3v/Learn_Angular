@@ -7,7 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./destino-viaje.component.css']
 })
 export class DestinoViajeComponent implements OnInit {  
-  @Input() nombre?: string;
+  @Input()
+  nombre!: string;
   constructor() {}
   ngOnInit(): void {
   }

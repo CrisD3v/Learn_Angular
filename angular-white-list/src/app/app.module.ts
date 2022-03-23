@@ -13,7 +13,7 @@ import { ListaDestinosComponent } from './lista-destinos/lista-destinos.componen
   ],
   imports: [
     BrowserModule,
-    CommonModule
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
