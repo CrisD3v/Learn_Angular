@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostBinding, Input } from '@angular/core';
+import { DestinoViaje } from '../Models/destino-viaje.model';
 
 
 @Component({
@@ -7,5 +8,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./destino-viaje.component.css']
 })
 export class DestinoViajeComponent {  
-  @Input() nombre!: string;
+  @Input() destino!: DestinoViaje;
+  @HostBinding('attr.class') cssClass = 'col-md-4 mb-3';
 }
+
