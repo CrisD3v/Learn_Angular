@@ -9,6 +9,7 @@ import { DestinoViaje } from '../Models/destino-viaje.model';
 })
 export class DestinoViajeComponent {  
   @Input() destino!: DestinoViaje;
+  @Input() position!: number;
   @HostBinding('attr.class') cssClass = 'col-md-4 mb-3';
   @Output() clicked: EventEmitter<DestinoViaje>;
 
